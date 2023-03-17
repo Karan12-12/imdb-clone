@@ -117,7 +117,7 @@ function displayMovieSearch(movie){
       favList.forEach(async(element)=>{
          let favlist = document.createElement('div')
          favlist.classList.add('favItemList')
-         const movie = await fetch(`http://www.omdbapi.com/?i=${element}&apikey=75bab9c9`)
+         const movie = await fetch(`https://www.omdbapi.com/?i=${element}&apikey=75bab9c9`)
          const data = await movie.json();
          favlist.innerHTML=`
          <div class="fav-poster">
