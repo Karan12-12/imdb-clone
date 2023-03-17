@@ -227,3 +227,128 @@ body{
 .hide-search-element{
     display: none;
 }
+
+@media(max-width : 450px){
+    *{
+        margin: 2px;
+    }
+    .logo h1{
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    #fav{
+        background-color: red;
+        color:white;
+        border-radius: 25px;
+        cursor: pointer;
+        width: 60px;
+        font-size: 0.4rem;
+        font-weight: 300;
+        margin-left: -80px;
+        margin-top: 20px;
+    }
+    #search{
+        border: 0;
+        font-size: 14px;
+        width: 300px;
+        height: 30px;
+        padding: 10px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .nav-container{
+       display:flex;
+
+       
+    }
+    .search-list{
+        margin-top: -25px;
+        position: absolute;
+        height: 60vh;
+        width: 300px;
+       
+        overflow-y: scroll;
+        z-index: 2;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+    .fav-poster img{
+        width: 90px;
+        height: 150px;
+        border:4px solid white;
+        
+    }
+    
+.search-list-item{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    margin-top: 5px;
+    background-color: rgb(9, 41, 21);
+    width: 495px;
+    height: 60px;   
+    margin-left: 0px;
+}
+.result-grid{
+    display: flex;
+    margin-top: 0px;
+    flex-wrap: wrap;
+    width: 300px;
+   
+}
+.movie-title{
+    font-size:1.5rem;
+    color: yellowgreen;
+    margin-top: -20px;
+}
+.movie-misc-info{
+    list-style-type: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding:1rem;
+    margin-left: 0;
+   
+}
+.movie-info .rated{
+    display: flex;
+    font-weight: 500;
+    margin-left: -40px;
+    align-items: center;
+    border:2px solid white;
+    height: 25px;
+    width: 170px;
+    background-color: yellowgreen;
+    color: black;
+}
+.movie-info .year{
+    font-weight: 600;
+    margin-top: -60px;
+}
+.movie-info input{
+    display: flex;
+    align-items: center;
+    background-color: red;
+    color:white;
+    height: 25px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    width:120px;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;   
+}
+.favItemList{
+    width: 140px;
+    background-color: rgba(52, 42, 42 , 0.5);
+    border-radius: 12px;
+}
+
+.favMovieTitle{
+    margin-top: -80px;
+    color: white;
+}
+.movie-poster{
+    margin-top: -50px;
+}
+}
