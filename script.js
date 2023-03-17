@@ -95,7 +95,7 @@ function displayMovieSearch(movie){
       <p class="actor"><b>Actor:</b>${details.Actors}</p>
       <p class="plot"><b>Plot:</b>${details.Plot}</p>
       <p class="language"><b>Language:</b>${details.Language}</p>
-      <p class="award">${details.Awards}</p>
+      <p class="award"><b><i class="fas fa-award"><b></i>${details.Awards}</p>
       </div>
       `;
    }
