@@ -227,9 +227,12 @@ body{
 .hide-search-element{
     display: none;
 }
+
+/* css code for mobile view */
+
 @media(max-width : 450px){
     *{
-        margin: 2px;
+        margin: 1px;
     }
     .logo h1{
         cursor: pointer;
@@ -287,7 +290,7 @@ body{
     display: flex;
     margin-top: 0px;
     flex-wrap: wrap;
-    width: 300px;
+    width: 100vw;
 }
 .movie-title{
     font-size:1.5rem;
@@ -295,11 +298,15 @@ body{
     margin-top: -20px;
 }
 .movie-info{
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width:100vw; 
+   }
+.movie-info .genre{
+    margin-left: -67px;
 }
 .movie-misc-info{
     margin-top: -20px;
@@ -319,6 +326,9 @@ body{
 }
 .movie-info .year{
     font-weight: 600;
+}
+.movie-info .plot{
+    margin-left: -2px;
 }
 .movie-info input{
     display: flex;
@@ -346,14 +356,16 @@ body{
 }
 .movie-poster img{
     margin-top: -30px;
-    margin-left: 70px;
+    margin-left: 110px;
     width: 150px;
     height: 200px;
 }
 .movie-info .plot{
     margin-top: 10px;
+    margin-left: 2px;
 }
 .movie-info .language b{
+    margin-left: -5px;
     color: rgb(255, 163, 25);
 }
 .favMovieTitle{
@@ -368,5 +380,8 @@ body{
     color: rgb(0, 0, 0);
     font-weight: 600;
     cursor: pointer;
+}
+.movie-info .award{
+    margin-left: -5px;
 }
 }
