@@ -227,7 +227,6 @@ body{
 .hide-search-element{
     display: none;
 }
-
 @media(max-width : 450px){
     *{
         margin: 2px;
@@ -258,15 +257,12 @@ body{
     }
     .nav-container{
        display:flex;
-
-       
     }
     .search-list{
         margin-top: -25px;
         position: absolute;
         height: 60vh;
         width: 300px;
-       
         overflow-y: scroll;
         z-index: 2;
         margin-top: 5px;
@@ -276,10 +272,8 @@ body{
         width: 90px;
         height: 150px;
         border:4px solid white;
-        
     }
-    
-.search-list-item{
+    .search-list-item{
     display: flex;
     align-items: center;
     font-size: 10px;
@@ -294,26 +288,28 @@ body{
     margin-top: 0px;
     flex-wrap: wrap;
     width: 300px;
-   
 }
 .movie-title{
     font-size:1.5rem;
     color: yellowgreen;
     margin-top: -20px;
 }
-.movie-misc-info{
-    list-style-type: none;
+.movie-info{
     display: flex;
-    justify-content:center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding:1rem;
-    margin-left: 0;
-   
+    width: 250px;
+}
+.movie-misc-info{
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .movie-info .rated{
     display: flex;
     font-weight: 500;
-    margin-left: -40px;
     align-items: center;
     border:2px solid white;
     height: 25px;
@@ -323,10 +319,10 @@ body{
 }
 .movie-info .year{
     font-weight: 600;
-    margin-top: -60px;
 }
 .movie-info input{
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: red;
     color:white;
@@ -348,7 +344,29 @@ body{
     margin-top: -80px;
     color: white;
 }
-.movie-poster{
-    margin-top: -50px;
+.movie-poster img{
+    margin-top: -30px;
+    margin-left: 70px;
+    width: 150px;
+    height: 200px;
+}
+.movie-info .plot{
+    margin-top: 10px;
+}
+.movie-info .language b{
+    color: rgb(255, 163, 25);
+}
+.favMovieTitle{
+    color: white;
+    font-size: 8px;
+}
+.favItemList input {
+    background-color: rgb(199, 193, 190);
+    border-radius: 15px;
+    height: 20px;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    cursor: pointer;
 }
 }
