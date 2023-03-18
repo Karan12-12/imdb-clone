@@ -384,4 +384,7 @@ body{
 .movie-info .award{
     margin-left: -5px;
 }
+.search-item-info{
+    margin-left: 10px;
+}
 }
