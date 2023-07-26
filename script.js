@@ -87,7 +87,7 @@ function displayMovieSearch(movie){
       <input id="add-to-fav" type="submit" value="Add to favourite" onclick="updateFav()">
       <ul class="movie-misc-info">
       <li class="year">${details.Year}</li>
-      <li class="rated">Ratings: ${details.Rated}</li>
+      <li class="rated">Ratings: ${details.imdbRating}</li>
       <li class="released"><b>Released:</b> ${details.Released}</li>
       </ul>
       <p class="genre"><b>Genre:</b>${details.Genre}</p>
